@@ -1,0 +1,3123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>金华电商大数据展示平台</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- <link rel="stylesheet" href="../css/style.min_bd18a267a8.css"> -->
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+	
+<div class="loginContentBox animated">
+	<div class="bgImgBox animated bounceInLeft">
+		<div class="bgImg">
+			<span class="zw">九次方大数据</span>
+			<span class="yw">JUSFOUN BIG DATA</span>
+		</div>
+	</div>
+	<div class="h1TitleBox animated bounceInUp">
+		<h1 class="h1Title ">
+			<a class="logo" href="javascript:void(0)">金华市<var>电商大数据</var>展示平台</a>
+		</h1>
+	</div>
+
+	<div class="loginBox  flipInX">
+		<form onsubmit="return false">
+			<input type="text" class="accountNumber" placeholder="账号"/>
+			<input type="password" class="passWord" placeholder="密码"/>
+			<p class="pCheck cf">
+				<input type="checkbox" class="checkboxBtn  fl" />
+				<span class="checkboxBg active fl"></span>
+				<span class="fl checkboxWord">自动登录</span>
+			</p>
+			<button class="submitBtn" id="loginBtn">登录</button>
+		</form>
+	</div>
+
+</div>
+<body>
+
+    <body>
+        <header>
+            <h1><a class="logo" href='javascript:void(0)'>金华市<var>电商大数据</var>展示平台</a></h1>
+        </header>
+        <div class="mainWrap">
+            <div class="leftWrap">
+                <div class="topC">
+                    <div class="cBox">
+                        <div class="topTitle">
+                            <span>店铺数量波动分析</span>
+                        </div>
+                        <div class="cBody" id='small_left_top'>
+                            <div class='inner'>
+                                <div id="left_top"></div>
+                                <p>2016/06 - 2016/12</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cBox">
+                        <div class="topTitle">
+                            <span>税务登记匹配分析</span>
+                        </div>
+                        <div class="cBody" id='small_left_center'>
+                            <div class='inner'>
+                                <div id="left_center"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomC">
+                    <div class="cBox">
+                        <div class="topTitle">
+                            <span>本月销售额店铺排行榜</span>
+                        </div>
+                        <div class="cBody" id='small_left_bottom'>
+                            <div class="inner">
+                                <div class="tabbox">
+                                    <table>
+                                        <tr>
+                                            <th>排名</th>
+                                            <th>店铺名</th>
+                                            <th>电商平台</th>
+                                            <th>行业类别</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>海澜之家官方旗...</td>
+                                            <td>淘宝</td>
+                                            <td>服装</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>人民教育出版社...</td>
+                                            <td>淘宝</td>
+                                            <td>服装</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>海尔旗舰店...</td>
+                                            <td>淘宝</td>
+                                            <td>服装</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>人民教育出版社...</td>
+                                            <td>淘宝</td>
+                                            <td>服装</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>海尔旗舰店...</td>
+                                            <td>淘宝</td>
+                                            <td>服装</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>人民教育出版社...</td>
+                                            <td>淘宝</td>
+                                            <td>服装</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="centerWrap">
+                <div class="topC">
+                    <div class="cBox">
+                        <div class="topTitle cTitle">
+                        </div>
+                        <div class="cBody" id="small_center">
+                            <div class="tips">
+                                <p>本月累计新增店铺：<var class="a">1560</var>家</p>
+                                <p>本月累计销售额：<var class="b">4586.55</var>千万元</p>
+                            </div>
+                            <div id="c_map"></div>
+                        </div>
+                    </div>
+                    <div class="cBox showBox">
+                        <div class="topTitle cTitle">
+                        </div>
+                        <div class="cBody">
+                            <div class="inner">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomC">
+                    <div class="cBox">
+                        <div class="topTitle">
+                            <span>行业销售趋势分析预测</span>
+                        </div>
+                        <div class="cBody" id="small_center_btm">
+                            <div class="inner">
+                                <div id="center_bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rightWrap">
+                <div class="topC">
+                    <div class="cBox">
+                        <div class="topTitle">
+                            <span>本月销售额排行榜</span>
+                        </div>
+                        <div class="cBody" id='small_right_top'>
+                            <div id="right_top"></div>
+                        </div>
+                    </div>
+                    <div class="cBox">
+                        <div class="topTitle">
+                            <span>销售金额与申报金额差异分析</span>
+                        </div>
+                        <div class="cBody" id='small_right_center'>
+                            <div class='inner'>
+                                <div id="right_center"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottomC">
+                    <div class="cBox">
+                        <div class="topTitle">
+                            <span>电商舆情监测</span>
+                        </div>
+                        <div class="cBody" id='small_right_btm'>
+                            <div class='inner'>
+                                <div id="right_bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none">
+            <div class="big_left_top_wrap">
+	<div class="titleBar cf">
+		<h2>店铺数量波动分析</h2>
+		<a class="returnCenter" href="javascript:void(0)"><i></i><span>返回</span></a>
+	</div>
+	<div class="chart" id='big_left_top'></div>
+</div>
+<div class="big_left_center_wrap">
+	<div class="titleBar cf">
+		<h2>税务登记匹配分析</h2>
+		<a class="returnCenter" href="javascript:void(0)"><i></i><span>返回</span></a>
+	</div>
+	<div class="chart" id='big_left_center'></div>
+</div>
+<div class="big_right_center_wrap">
+	<div class="titleBar cf">
+		<h2>销售金额与申报金额差异分析
+</h2>
+		<a class="returnCenter" href="javascript:void(0)"><i></i><span>返回</span></a>
+	</div>
+	<div class="chart" id='big_right_center'></div>
+</div>
+<div class="big_right_top_wrap">
+	<div class="titleBar cf">
+		<h2>本月销售额排行榜</h2>
+		<a class="returnCenter" href="javascript:void(0)"><i></i><span>返回</span></a>
+	</div>
+	<div class="chart" id='big_right_top'></div>
+</div>
+<div class="big_center_bottom_wrap">
+	<div class="titleBar cf">
+		<h2>行业销售趋势分析预测</h2>
+		<a class="returnCenter" href="javascript:void(0)"><i></i><span>返回</span></a>
+	</div>
+	<div class="chart" id='big_center_bottom'></div>
+	<div id="year">
+	    <ul class="year_ul">
+	        <li class="focus_li"><em></em><span>2014年</span></li>
+	        <li><em></em><span>2015年</span></li>
+	        <li style="height: 0px"><em></em><span>2016年</span></li>
+	    </ul>
+	</div>
+</div>
+
+<div class="big_right_bottom_wrap">
+	<div class="titleBar cf">
+		<h2>电商舆情监测</h2>
+		<a class="returnCenter" href="javascript:void(0)"><i></i><span>返回</span></a>
+	</div>
+	<div class="chart" id='big_right_bottom'></div>
+    <div id="date-slider" style="width: 90%; border-radius:20px;position: relative;top:-35px;"></div>
+    <div class="ppbox">
+    	<div class="ccbox ccbox1">
+			<h2><span class='name'>高高阿</span><span class="type">(发生阶段)</span></h2>
+			<div class="content">
+				<p>社会热点事件，起因是一名常州游客陈岩在哈尔滨市松北区北岸渔村饭店疑似被“宰”社会热点事件</p>
+			</div>
+		</div>
+		<div class="ccbox ccbox2">
+			<h2>舆情声量图</h2>
+			<div id="big_right_bottom_p"></div>
+		</div>
+		<div class="ccbox ccbox3">
+			<h2>事件列表</h2>
+            <div class="tabbox">
+                <table>
+                    <tr>
+                        <th>排名</th>
+                        <th>店铺名</th>
+                        <th>电商平台</th>
+                        <th>行业类别</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>海澜之家官方旗...</td>
+                        <td>淘宝</td>
+                        <td>服装</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>人民教育出版社...</td>
+                        <td>淘宝</td>
+                        <td>服装</td>
+                    </tr>
+                </table>
+            </div>
+		</div>
+		<a href="javascript:void(0)" class="close">x</a>
+    </div>
+
+</div>
+            <div class="ObjFeatureBox">
+	<div class="ObjFeatureH">
+		<div class="ObjFeature">
+			<h3 class="fl">海澜之家官方旗舰店</h3>
+			<ul class="ObjFeature_ul fr">
+				<li><i class="ObjFeature_icon1 fl"></i><span class="fl">运营分析</span></li>
+				<li class="returnCenter"><i class="ObjFeature_icon2 fl"></i><span class="fl">返回</span></li>
+			</ul>
+		</div>
+		<ul class="horizontalNav">
+			<li class="activeH">行业趋势</li>
+			<li>对象特征</li>
+		</ul>
+	</div>
+	<div class="mains">
+		<div class="mainCus" style="display:block;">
+			<div class="topMain">
+				<div class="Tleftmain fl">
+					<h4>信用等级分布</h4>
+					<div class="TleftCharts" id="TleftCharts">
+					</div>					
+				</div>
+				<div class="Trightmain fr">
+					<h4>
+						<span class="fl">性别分布</span>
+						<span class="fr">数量：1000人</span>
+					</h4>
+					<div class="TrightCharts" id="TrightCharts">
+					</div>										
+				</div>
+			</div>
+			<div class="bottomMain">
+				<div class="Bleftmain fl">
+					<h4>年龄阶段占比</h4>
+					<div class="BleftCharts" id="BleftCharts">
+					</div>
+				</div>
+				<div class="Brightmain fr">
+					<h4>消费行为</h4>
+					<div class="BrightCharts" id="BrightCharts">
+						玫瑰
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="mainObj" style="display:none;">
+			<div class="leftNav fl">
+				<h4>全部商品分类</h4>
+				<ul>			
+					<li>家用电器<span class="fr">&gt;</span></li>
+					<li>手机&nbsp;/&nbsp;数码&nbsp;/&nbsp;通信<span class="fr">&gt;</span></li>
+					<li>电脑&nbsp;/&nbsp;办公<span class="fr">&gt;</span></li>
+					<li>家用电器<span class="fr">&gt;</span></li>
+					<li>手机&nbsp;/&nbsp;数码&nbsp;/&nbsp;通信<span class="fr">&gt;</span></li>
+					<li>电脑&nbsp;/&nbsp;办公<span class="fr">&gt;</span></li>
+					<li>家用电器<span class="fr">&gt;</span></li>
+					<li>手机&nbsp;/&nbsp;数码&nbsp;/&nbsp;通信<span class="fr">&gt;</span></li>
+					<li>电脑&nbsp;/&nbsp;办公<span class="fr">&gt;</span></li>
+				</ul>
+			</div>
+			<div class="rightMain fl">
+				<div class="rightMain_query">
+					<span class="prompt fl">输入商品关键字：</span>
+					<input class="input fl" type="text" value="">
+					<span class="query fr">查询</span>				
+				</div>
+				<div class="rightMain_choice">
+					<span class="prompt fl">销售量：</span>
+					<form class="fl">
+						<label for="">
+							<input type="radio" value=""/><i >全部</i>
+							<span class="fl radioBg activeBg"></span>												
+						</label>
+						<label for="">
+							<input type="radio" value=""/>100以下
+							<span class="fl radioBg"></span>
+						</label>	
+						<label for="">
+							<input type="radio" value=""/>100-500
+							<span class="fl radioBg"></span>
+						</label>
+						<label for="">
+							<input type="radio" value=""/>500以上
+							<span class="fl radioBg"></span>
+						</label>
+					</form>																
+				</div>
+				<table class="rightMain_table">
+					<thead>
+						<tr>
+							<th class="w1">序号</th>
+							<th class="w2">商品名</th>
+							<th class="w3">销售量</th>
+							<th class="w4">行业类别</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Heilan Home/海澜之家2016夏季男装V领短袖T恤</td>
+							<td>2340</td>
+							<td>服装</td>
+						</tr>
+						<tr class="activeTD">
+							<td>2</td>
+							<td>Heilan Home/海澜之家2016夏季男装短裤九分短裤</td>
+							<td>2120</td>
+							<td>服装</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Heilan Home/海澜之家2016夏季男装无袖背心灰色</td>
+							<td>2213</td>
+							<td>服装</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Heilan Home/海澜之家2016夏季男装短袖T恤彩色</td>
+							<td>2650</td>
+							<td>服装</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>Heilan Home/海澜之家2016夏季男装衬衫短袖衬衫</td>
+							<td>2123</td>
+							<td>服装</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>Heilan Home/海澜之家2016夏季男装短裤五分短裤</td>
+							<td>2338</td>
+							<td>服装</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="pagination" id="page1">
+					<span><</span>
+					<a href="#" class="current">
+						<span>1</span>
+					</a>
+					<a href="#">
+						<span>2</span>
+					</a>
+					<a href="#">
+						<span>3</span>
+					</a>
+					<a href="#">
+						<span>4</span>
+					</a>
+					<a href="#">
+						<span>5</span>
+					</a>
+					<span>></span>
+				</div>
+			</div>					
+		</div>													
+	</div>
+</div>
+            <div class="ObjFeatureBox ObjFeatureBox2">
+	<div class="ObjFeature marginB20">
+		<h3 class="fl">义乌市电商交易报表</h3>
+		<ul class="ObjFeature_ul fr">
+			<li class="zsfx"><i class="indexAnalysisIcon fl"></i><span class="fl">指数分析</span></li>
+			<li class="returnCenter"><i class="ObjFeature_icon2 fl"></i><span class="fl">返回</span></li>
+		</ul>
+	</div>
+	<div class="ElecSupTransReportBigBox">
+		<div class="leftNav fl" >
+			<h4>全部商品分类</h4>
+			<ul class="leftNavList" id="leftNavList">
+				<li>家用电器<span class="fr">&gt;</span></li>
+				<li>手机&nbsp;/&nbsp;数码&nbsp;/&nbsp;通信<span class="fr">&gt;</span></li>
+				<li>电脑&nbsp;/&nbsp;办公<span class="fr">&gt;</span></li>
+				<li>家用电器<span class="fr">&gt;</span></li>
+				<li>手机&nbsp;/&nbsp;数码&nbsp;/&nbsp;通信<span class="fr">&gt;</span></li>
+				<li>电脑&nbsp;/&nbsp;办公<span class="fr">&gt;</span></li>
+				<li>家用电器<span class="fr">&gt;</span></li>
+				<li>手机&nbsp;/&nbsp;数码&nbsp;/&nbsp;通信<span class="fr">&gt;</span></li>
+				<li>电脑&nbsp;/&nbsp;办公<span class="fr">&gt;</span></li>
+				<li>家用电器<span class="fr">&gt;</span></li>
+			</ul>
+			
+		</div>
+		<div class="ElecSupTransReport" style="position:relative;" >
+			<div class="posAbsRightBox" id="posAbsRightBox">
+				<div class="posAbsRight"> 
+					<ul>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+					
+					</ul>
+				</div>
+				<div class="posAbsRight"> 
+					<ul>
+						<li>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+					
+					</ul>
+				</div>
+				<div class="posAbsRight"> 
+					<ul>
+						<li>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+					
+					</ul>
+				</div>
+				<div class="posAbsRight"> 
+					<ul>
+						<li>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+					
+					</ul>
+				</div>
+				<div class="posAbsRight"> 
+					<ul>
+						<li>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+					
+					</ul>
+				</div>
+				<div class="posAbsRight"> 
+					<ul>
+						<li>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+					
+					</ul>
+				</div>
+				<div class="posAbsRight"> 
+					<ul>
+						<li>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+					
+					</ul>
+				</div>
+				<div class="posAbsRight"> 
+					<ul>
+						<li>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+					
+					</ul>
+				</div>
+				<div class="posAbsRight"> 
+					<ul>
+						<li>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+					
+					</ul>
+				</div>
+				<div class="posAbsRight"> 
+					<ul>
+						<li>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+				
+					</ul>
+				</div>
+				<div class="posAbsRight"> 
+					<ul>
+						<li>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">空调</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">空调</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+					
+					</ul>
+				</div>
+				<div class="posAbsRight"> 
+					<ul>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">生活电器</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>							
+						</li>
+						<li>
+							<span class="smallItem">个护健康</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房大卫</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+						<li>
+							<span class="smallItem">厨房小卫</span>
+							<span class="smallItem">平板电视</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">冰箱</span>
+							<span class="smallItem">洗衣机</span>
+							<span class="smallItem">家庭影院</span>
+							<span class="smallItem">冰箱</span>
+						</li>
+					
+					</ul>
+				</div>
+			</div>
+			<ul class="Tab cf">
+				<li class="active"><span>行业趋势</span></li>
+				<li><span>热销商品</span></li>
+				<li><span>热销店铺</span></li>
+				<li><span>行业规模</span></li>
+			</ul>
+			<div class="ElecSupTransReportBox">
+				
+				<!--行业趋势-->
+				<div class="TabCon active">
+					<div class="industrySizeCondition">
+						<div class="timeCondition marginT20">
+							<span class="conditionTit">选择查询时间：</span>
+							<div class="selectBigBox fl">
+								<div class="selectBox fl">
+									<i></i>
+									<select>
+										<option>2015-12</option>
+										<option>2015-11</option>
+										<option>2015-10</option>
+									</select>
+								</div>
+								<div class="selectBox fl">
+									<i></i>
+									<select>
+										<option>2015-12</option>
+										<option>2015-11</option>
+										<option>2015-10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="platformCondition cf">
+							<span class="conditionTit">电商平台：</span>
+							<div class="dateList1 cf fl marginT11">
+								<form>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>全部
+										<span class="fl radiobg bgactive"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>淘宝
+										<span class="fl radiobg"></span>
+									</label>	
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>京东
+										<span class="fl radiobg"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>当当
+										<span class="fl radiobg"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>苏宁易购
+										<span class="fl radiobg"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>其他
+										<span class="fl radiobg"></span>
+									</label>
+								</form>
+							</div>
+							<button class="searchBtn fr">查询</button>
+						</div>
+						<div class="sortCondition ">
+							<span class="conditionTit">排序方式：</span>
+							<div class="dateList1 cf fl marginT11">
+								<form>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>销量
+										<span class="fl radiobg bgactive"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>销售额
+										<span class="fl radiobg"></span>
+									</label>
+								</form>
+								
+							</div>
+						</div>
+					</div>
+					<div class="industryTrendChart">
+						<span class="change"><i class="changeIcon"></i>切换</span>
+						<div class="industryTrendsBox active marginT10">
+							<div class="industryTrendsTit">子行业销量趋势图</div>
+							<div class="industryTrends" id="industryTrends"></div>
+						</div>
+						
+						<div class="industryTrendsTab marginT10">
+							<table width="100%">
+								<tr class="noBg">
+									<th rowspan="2">类别名称</th>
+									<th>2016-03</th>
+									<th colspan="2">2016-04</th>
+									<th colspan="2">2016-05</th>
+									<th>总计</th>
+								</tr>
+								<tr class="noBg">
+									<th>销量</th>
+									<th>销量</th>
+									<th>环比</th>
+									<th>销量</th>
+									<th>环比</th>
+									<th>销量</th>
+								</tr>
+								<tr>
+									<td>T恤</td>
+									<td>11.383.422</td>
+									<td>11.383.422</td>
+									<td class="huanbiUp">80.8%<i class="upIcon"></i></td>
+									<td>11.383.422</td>
+									<td class="huanbiUp">80.8%<i class="upIcon"></i></td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>牛仔裤</td>
+									<td>11.383.422</td>
+									<td>11.383.422</td>
+									<td class="huanbiUp">80.8%<i class="upIcon"></i></td>
+									<td>11.383.422</td>
+									<td class="huanbiUp">80.8%<i class="upIcon"></i></td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>衬衫</td>
+									<td>11.383.422</td>
+									<td>11.383.422</td>
+									<td class="huanbiDown">80.8%<i class="downIcon"></i></td>
+									<td>11.383.422</td>
+									<td class="huanbiDown">80.8%<i class="downIcon"></i></td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>牛仔裤</td>
+									<td>11.383.422</td>
+									<td>11.383.422</td>
+									<td class="huanbiDown">80.8%<i class="downIcon"></i></td>
+									<td>11.383.422</td>
+									<td class="huanbiDown">80.8%<i class="downIcon"></i></td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>牛仔裤</td>
+									<td>11.383.422</td>
+									<td>11.383.422</td>
+									<td class="huanbiDown">80.8%<i class="downIcon"></i></td>
+									<td>11.383.422</td>
+									<td class="huanbiDown">80.8%<i class="downIcon"></i></td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>T恤</td>
+									<td>11.383.422</td>
+									<td>11.383.422</td>
+									<td class="huanbiUp">80.8%<i class="upIcon"></i></td>
+									<td>11.383.422</td>
+									<td class="huanbiUp">80.8%<i class="upIcon"></i></td>
+									<td>456.4536</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--热销商品-->
+				<div class="TabCon ">
+					
+					<div class="industrySizeCondition">
+						<div class="timeCondition marginT20">
+							<span class="conditionTit">选择查询时间：</span>
+							<div class="selectBigBox fl">
+								<div class="selectBox fl">
+									<i></i>
+									<select>
+										<option>2015-12</option>
+										<option>2015-11</option>
+										<option>2015-10</option>
+									</select>
+								</div>
+								<div class="selectBox fl">
+									<i></i>
+									<select>
+										<option>2015-12</option>
+										<option>2015-11</option>
+										<option>2015-10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="platformCondition cf">
+							<span class="conditionTit">电商平台：</span>
+							<div class="dateList1 cf fl marginT11">
+								<form>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>全部
+										<span class="fl radiobg bgactive"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>淘宝
+										<span class="fl radiobg"></span>
+									</label>	
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>京东
+										<span class="fl radiobg"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>当当
+										<span class="fl radiobg"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>苏宁易购
+										<span class="fl radiobg"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>其他
+										<span class="fl radiobg"></span>
+									</label>
+								</form>
+							</div>
+							<button class="searchBtn fr">查询</button>
+						</div>
+						<div class="sortCondition ">
+							<span class="conditionTit marginT10">排序方式：</span>
+							<div class="dateList1 cf fl marginT11">
+								<form class="fl marginT10">
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>销量
+										<span class="fl radiobg bgactive"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>销售额
+										<span class="fl radiobg"></span>
+									</label>
+								</form>
+								<div class="selectBox fl ">
+									<i></i>
+									<select>
+										<option>TOP10</option>
+										<option>TOP10</option>
+										<option>TOP10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="industryTrendChart">
+						<div class="industryTrendsTab hotShopTab">
+							<table width="100%">
+								<tr class="noBg">
+									<th>排名</th>
+									<th>商品目录</th>
+									<th>销量</th>
+									<th>交易金额（万元）</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>连衣裙</td>
+									<td>23400</td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>冰箱</td>
+									<td>23400</td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>汽车用品/内饰品</td>
+									<td>23400</td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>运动鞋</td>
+									<td>23400</td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>套装/学生校服/工作制服</td>
+									<td>23400</td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>运动鞋</td>
+									<td>23400</td>
+									<td>456.4536</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--热销店铺-->
+				<div class="TabCon ">
+					
+					<div class="industrySizeCondition">
+						<div class="timeCondition marginT20">
+							<span class="conditionTit">选择查询时间：</span>
+							<div class="selectBigBox fl">
+								<div class="selectBox fl">
+									<i></i>
+									<select>
+										<option>2015-12</option>
+										<option>2015-11</option>
+										<option>2015-10</option>
+									</select>
+								</div>
+								<div class="selectBox fl">
+									<i></i>
+									<select>
+										<option>2015-12</option>
+										<option>2015-11</option>
+										<option>2015-10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="platformCondition cf">
+							<span class="conditionTit">电商平台：</span>
+							<div class="dateList1 cf fl marginT11">
+								<form>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>全部
+										<span class="fl radiobg bgactive"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>淘宝
+										<span class="fl radiobg"></span>
+									</label>	
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>京东
+										<span class="fl radiobg"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>当当
+										<span class="fl radiobg"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>苏宁易购
+										<span class="fl radiobg"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>其他
+										<span class="fl radiobg"></span>
+									</label>
+								</form>
+							</div>
+							<button class="searchBtn fr">查询</button>
+						</div>
+						<div class="sortCondition ">
+							<span class="conditionTit marginT10">排序方式：</span>
+							<div class="dateList1 cf fl marginT11">
+								<form class="fl marginT10">
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>销量
+										<span class="fl radiobg bgactive"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>销售额
+										<span class="fl radiobg"></span>
+									</label>
+								</form>
+								<div class="selectBox fl ">
+									<i></i>
+									<select>
+										<option>TOP10</option>
+										<option>TOP10</option>
+										<option>TOP10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="industryTrendChart">
+						<div class="industryTrendsTab hotShopTab">
+							<table width="100%">
+								<tr class="noBg">
+									<th>排名</th>
+									<th>店铺名</th>
+									<th>电商平台</th>
+									<th>销量</th>
+									<th>交易金额（万元）</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>海澜之家旗舰店</td>
+									<td>淘宝</td>
+									<td>23400</td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>义务服装店</td>
+									<td>京东</td>
+									<td>23400</td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>人民教育出版社</td>
+									<td>当当</td>
+									<td>23400</td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>海澜之家旗舰店</td>
+									<td>淘宝</td>
+									<td>23400</td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>义务服装店</td>
+									<td>京东</td>
+									<td>23400</td>
+									<td>456.4536</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>人民教育出版社</td>
+									<td>当当</td>
+									<td>23400</td>
+									<td>456.4536</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--行业规模-->
+				<div class="TabCon ">
+					
+					<div class="industrySizeCondition">
+						<div class="timeCondition marginT20">
+							<span class="conditionTit">选择查询时间：</span>
+							<div class="selectBigBox fl">
+								<div class="selectBox fl">
+									<i></i>
+									<select>
+										<option>2015-12</option>
+										<option>2015-11</option>
+										<option>2015-10</option>
+									</select>
+								</div>
+								<div class="selectBox fl">
+									<i></i>
+									<select>
+										<option>2015-12</option>
+										<option>2015-11</option>
+										<option>2015-10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="platformCondition cf">
+							<span class="conditionTit">电商平台：</span>
+							<div class="dateList1 cf fl marginT11">
+								<form>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>全部
+										<span class="fl radiobg bgactive"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>淘宝
+										<span class="fl radiobg"></span>
+									</label>	
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>京东
+										<span class="fl radiobg"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>当当
+										<span class="fl radiobg"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>苏宁易购
+										<span class="fl radiobg"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>其他
+										<span class="fl radiobg"></span>
+									</label>
+								</form>
+							</div>
+							<button class="searchBtn fr">查询</button>
+						</div>
+						<div class="sortCondition ">
+							<span class="conditionTit">排序方式：</span>
+							<div class="dateList1 cf fl marginT11">
+								<form>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>销量
+										<span class="fl radiobg bgactive"></span>
+									</label>
+									<label for="">
+										<input type="radio" name="time" class="radioBtn"/>销售额
+										<span class="fl radiobg"></span>
+									</label>
+								</form>
+								
+							</div>
+						</div>
+					</div>
+					<div class="industryTrendChart">
+						<div class="hygm" id="hygm"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+            <div class="innerBox">
+
+
+<div class="ObjFeatureBox ">
+
+		<div class="ObjFeature marginB20">
+			<h3 class="fl">海澜之家官方旗舰店</h3>
+			<ul class="ObjFeature_ul fr">
+				<li class="khfx"><i class="customeAnalysis fl"></i><span class="fl">客户分析</span></li>
+				<li class="returnCenter"><i class="ObjFeature_icon2 fl"></i><span class="fl">返回</span></li>
+			</ul>
+		</div>
+		<div class="storesInfo">
+			<ul class="Tab storeInfoTab cf">
+				<li class="active"><span>基本信息</span></li>
+				<li><span>店铺销售信息分析</span></li>
+				<li><span>店铺运营情况分析</span></li>
+				<li><span>店铺本品排名</span></li>
+				<li><span>店铺竞品排名</span></li>
+			</ul>
+			<div class="storesInfoBox">				
+				<!--基本信息-->
+				<div class="TabCon active">
+					<div class="basicInfoBigBox marginT20">
+						<div class="basicInfoBigBoxL">
+							<div class="basicInfoIcon marginB20"><img src="../img/basicInfo.png"></div>
+							<div class="basicInfoSmallIcon">
+								<i class="basicInfo1"></i>
+								<i class="basicInfo2"></i>
+								<i class="basicInfo3"></i>
+							</div>
+							<div class="basicInfoCon">27005</div>
+							<div class="basicInfoCon">关注</div>
+						</div>
+						<div class="basicInfoBigBoxR">
+							<div class="basicInfoBigBoxRT">
+								<table class="basicInfoBox">
+									<tr>
+										<td width="33.3%">店铺服务</td>
+										<td width="33.3%">店铺动态评分</td>
+										<td width="33.3%">与同行业相比</td>
+									</tr>
+									<tr>
+										<td>掌柜：海澜之家官方旗舰店</td>
+										<td>描述相符：<span class="colorG">4.8</span></td>
+										<td><i></i>高于39.75%</td>
+									</tr>
+									<tr>
+										<td>开店时长：天猫6年店</td>
+										<td>服务态度：<span class="colorG">4.8</span></td>
+										<td><i></i>高于39.75%</td>
+									</tr>
+									<tr>
+										<td>所在地：江苏，无锡</td>
+										<td>物流服务：<span class="colorG">4.8</span></td>
+										<td><i></i>高于39.75%</td>
+									</tr>
+									<tr>
+										<td colspan="3"><span class="fl">工商执照：</span><img src="../img/gszz.png" class="basicImg fl"></td>
+									</tr>
+								</table>
+							</div>
+							<div class="basicInfoBigBoxRB">
+								<table class="basicInfoBox">
+									<tr>
+										<td width="33.3%">注册时间：2014-12-20</td>
+										<td width="33.3%">电商平台：淘宝</td>
+										<td width="33.3%">行业类别：服装</td>
+									</tr>
+									<tr>
+										<td>工商注册号：674685423574</td>
+										<td>注册人：王五</td>
+										<td>所在地区：义乌市</td>
+									</tr>
+								</table>
+							</div>
+						</div>						
+					</div>
+					
+				</div>
+				<!--店铺销售信息分析-->
+				<div class="TabCon ">
+					<div class="timeCondition marginT10">
+						<span class="conditionTit">查询条件：</span>
+						<div class="selectBigBox fl">
+							<div class="selectBox fl ">
+								<i></i>
+								<select>
+									<option>按月</option>
+									<option>按年</option>
+								</select>
+							</div>
+							<div class="selectBox fl ">
+								<i></i>
+								<select>
+									<option>2015-12</option>
+									<option>2015-11</option>
+									<option>2015-10</option>
+								</select>
+							</div>
+							<div class="selectBox fl ">
+								<i></i>
+								<select>
+									<option>2015-12</option>
+									<option>2015-11</option>
+									<option>2015-10</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					
+					<div class="shopsaleInfo">
+						<div  class="shopsaleInfoL fl" id="shopsaleInfoL"></div>
+						<div class="shopsaleInfoR fl" id="shopsaleInfoR"></div>
+					</div>
+				</div>
+				<!--店铺运营情况分析-->
+				<div class="TabCon">
+					<div class="shopsaleInfo cf marginB20 marginT20">
+						<div class="shopOperativeInfoL" id="shopOperativeInfoL" ></div>
+						<div class="shopOperativeInfoC" id="shopOperativeInfoC" ></div>
+						<div class="shopOperativeInfoR" id="shopOperativeInfoR" ></div>
+					</div>
+				</div>
+				<!--店铺本品排名-->
+				<div class="TabCon ">
+					<div class="industryTrendChart1">
+						<div class="industryTrendsTab hotShopTab">
+							<table width="100%">
+								<tr class="noBg">
+									<th>排名</th>
+									<th>商品名称</th>
+									<th>掌柜</th>
+									<th>地域</th>
+									<th>店铺</th>
+									<th>成交均价</th>
+									<th>销量</th>
+									<th>商品类别</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>
+										<img class="shopImg fl" src="../img/shopNameIcon.png">
+										<span class="shopName fl">海澜之家/Heilan Home2016 夏季新品男装圆领休闲海澜之家/Heilan Home2016 夏季新品男装圆领休闲...</span>
+									</td>
+									<td>
+										<img class="zgImg fl" src="../img/zgIcon.png">
+										<span class="zgName">海澜之家官方旗舰店</span>
+									</td>
+									<td>江苏 无锡</td>
+									<td>海澜之家</td>
+									<td>328</td>
+									<td>2,931</td>
+									<td>运动服饰</td>
+								</tr>
+								<tr >
+									<td>2</td>
+									<td>
+										<img class="shopImg fl" src="../img/shopNameIcon.png">
+										<span class="shopName fl">海澜之家/Heilan Home2016 夏季新品男装圆领休闲海澜之家/Heilan Home2016 夏季新品男装圆领休闲...</span>
+									</td>
+									<td>
+										<img class="zgImg fl" src="../img/zgIcon.png">
+										<span class="zgName">海澜之家官方旗舰店</span>
+									</td>
+									<td>江苏 无锡</td>
+									<td>海澜之家</td>
+									<td>768</td>
+									<td class="colorR">3,531</td>
+									<td>休闲套装</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>
+										<img class="shopImg fl" src="../img/shopNameIcon.png">
+										<span class="shopName fl">海澜之家/Heilan Home2016 夏季新品男装圆领休闲海澜之家/Heilan Home2016 夏季新品男装圆领休闲...</span>
+									</td>
+									<td>
+										<img class="zgImg fl" src="../img/zgIcon.png">
+										<span class="zgName">海澜之家官方旗舰店</span>
+									</td>
+									<td>江苏 无锡</td>
+									<td>海澜之家</td>
+									<td>458</td>
+									<td>2,900</td>
+									<td>休闲套装</td>
+								</tr>
+							</table>
+						</div>
+						<div class="pagination" id="page1">
+							<span><</span>
+							<a href="javascript:;" class="current">
+								<span>1</span>
+							</a>
+							<a href="javascript:;">
+								<span>2</span>
+							</a>
+							<a href="javascript:;">
+								<span>3</span>
+							</a>
+							<span>></span>
+						</div>
+					</div>
+				</div>
+				<!--店铺竞品排名-->
+				<div class="TabCon ">
+					<div class="industryTrendChart1">
+						<div class="competitorBox marginT20">
+							<div class="selectBox fl divselectDd">
+								<i></i>
+								<div class="divSelect">海澜之家/Heilan Home2016夏季新品男装圆领</div>
+							</div>
+							<div class="divSelectDrop">
+								<ul>
+									<li>海澜之家/Heilan Home2016夏季新品男装圆领休 闲短袖T恤HNTBJ2N223A 藏青花纹(N7) 175/92Y</li>
+									<li>海澜之家/Heilan Home2016夏季新品男装圆领休 闲短袖T恤HNTBJ2N223A 藏青花纹(N7) 175/92Y</li>
+									<li>海澜之家/Heilan Home2016夏季新品男装圆领休 闲短袖T恤HNTBJ2N223A 藏青花纹(N7) 175/92Y</li>
+									<li>海澜之家/Heilan Home2016夏季新品男装圆领休 闲短袖T恤HNTBJ2N223A 藏青花纹(N7) 175/92Y</li>
+									
+								</ul>
+							</div>
+						</div>
+						<div class="industryTrendsTab hotShopTab competitorTab">
+							<table>
+								<tr class="noBg">
+									<th>排名</th>
+									<th>掌柜</th>
+									<th>销量</th>
+									<th>销售额</th>
+									<th>标价</th>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>
+										<img class="zgImg fl" src="../img/zgIcon.png">
+										<span class="zgName">海澜之家官方旗舰店</span>
+									</td>
+									<td>157,660</td>
+									<td>36,157,660</td>
+									<td class="huanbiUp">199.00<i class="upIcon"></i></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>
+										<img class="zgImg fl" src="../img/zgIcon.png">
+										<span class="zgName">海澜之家嘉汇专卖店</span>
+									</td>
+									<td>1,611</td>
+									<td>525,079</td>
+									<td class="huanbiUp">89.00<i class="upIcon"></i></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>
+										<img class="zgImg fl" src="../img/zgIcon.png">
+										<span class="zgName">海澜之家恒顺通专卖店</span>
+									</td>
+									<td>1,628</td>
+									<td>503,728</td>
+									<td>78.00</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>
+										<img class="zgImg fl" src="../img/zgIcon.png">
+										<span class="zgName">海澜之家华益达专卖店</span>
+									</td>
+									<td>692</td>
+									<td>259,853</td>
+									<td class="huanbiDown">90.00<i class="downIcon"></i></td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>
+										<img class="zgImg fl" src="../img/zgIcon.png">
+										<span class="zgName">海澜之家大展宏图专卖店</span>
+									</td>
+									<td>559</td>
+									<td>178,680</td>
+									<td class="huanbiDown">88.00<i class="downIcon"></i></td>
+								</tr>
+							</table>
+						</div>
+						<div class="pagination" id="page1">
+							<span><</span>
+							<a href="javascript:;" class="current">
+								<span>1</span>
+							</a>
+							<a href="javascript:;">
+								<span>2</span>
+							</a>
+							<a href="javascript:;">
+								<span>3</span>
+							</a>
+							<span>></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+</div>
+            <div class="innerBox xwbox">
+<div class="ObjFeatureBox">
+	<div class="ObjFeature marginB20">
+		<h3 class="fl">区域电商指数分析</h3>
+		<ul class="ObjFeature_ul fr">
+			<!--<li class="jybb"><i class="transactionReports fl"></i><span class="fl">交易报表</span></li>-->
+			<li class="returnCenter"><i class="ObjFeature_icon2 fl"></i><span class="fl">返回</span></li>
+		</ul>
+	</div>
+	
+	<div class="elecSupIndexAnalysis marginT10">
+		<div class="elecSupIndexAnalysisBox marginT10">
+			<div class="nextPrevBtn">
+				<span class="prevBtn"><i class="prevIcon fl"></i>上一个</span>
+				<span class="nextBtn"><i class="nextIcon fr"></i>下一个</span>
+			</div>
+		</div>
+		<div class="elecSupIndexAnalysisCon">
+			<div class="elecPlatBox active">
+				<div class="elecPlat"><span>电商平台统计销售额</span></div>
+				<div class="elecPlatChart marginT20" cid="zhuHorizotal"></div>
+			</div>
+			<div class="elecPlatBox ">
+				<div class="elecPlat"><span>店铺分布</span></div>
+				<div class="elecPlatChart marginT20" cid="scatterChart"></div>
+				<div id="date-slider2" style="top:130px;right:50px;position: absolute;"></div>
+				
+			</div>
+			<div class="elecPlatBox ">
+				<div class="elecPlat"><span>网店新增数量及增长率分析</span></div>
+				<div class="elecPlatChart marginT20" cid="zhuBigChart"></div>
+			</div>	
+			<div class="elecPlatBox ">
+				<div class="elecPlat"><span>电商平台统计店铺销量</span></div>
+				<div class="elecPlatChart marginT20" cid="rosePieBigChart"></div>
+			</div>	
+		</div>
+		
+	</div>
+</div>
+</div>
+            <div class="innerBox innerBox_yw">
+<div class="myWrap">
+	<div class="titleBox cf">
+		<h3 class="MytitleBar fl">
+			Heilan Home/海澜之家2016夏季男装 V领短袖T恤 
+		</h3>
+		<div class="titleBtn fr cf">
+			<span class="fl"><i class="productsList"></i>商品列表</span>
+			<span class="fl"><i class="operationAnalysis"></i>运营分析</span>
+			<span class="fl"><i class="goBack returnCenter"></i>返回</span>
+		</div>
+	</div>
+	<div class="navList cf">
+		<span class="fl tradeInfo active">交易信息</span>
+		<span class="fl visitorInfo">访客信息</span>
+	</div>
+	<div class="listContent show">
+		<div class="dateList cf">
+			<form>
+				<label for="">
+					<input type="radio" name="time" class="radioBtn"/>最近一周
+					<span class="fl radiobg bgactive"></span>
+				</label>
+				<label for="">
+					<input type="radio" name="time" class="radioBtn"/>最近15天
+					<span class="fl radiobg"></span>
+				</label>	
+				<label for="">
+					<input type="radio" name="time" class="radioBtn"/>最近一月
+					<span class="fl radiobg"></span>
+				</label>
+			</form>
+		</div>
+		<table class="mainList">
+			<tr class="bb">
+				<td>序号</td>
+				<td width=10%>客户昵称</td>
+				<td width=12%>交易时间</td>
+				<td width=17%>订单号</td>
+				<td width=39%>商品</td>
+				<td>单价</td>
+				<td>数量</td>
+				<td class="tar">成交价</td>
+			</tr>
+			<tr>
+				<td class="pl10">1</td>
+				<td width=10% class="checkMoreBox">愤怒小鸟<span class="checkMore">查看更多</span></td>
+				<td width=12%>2016-07-03</td>
+				<td width=17%>3672672970</td>
+				<td class="cf" width=39%>
+					<img class="proImg fl" src="../img/shopIcon.png" alt="" />
+					<div class="fl productInfo">
+						<span class="name">海澜之家男款短裤 </br>潮人必备</span>
+						<div class="cf">
+							<span class="color fl">颜色：浅灰 </span>
+							<span class="size fl">尺码：XL</span>
+							<span class="seven fl"></span>
+							<span class="gift fl"></span>
+							<span class="real fl"></span>
+						</div>
+					</div>
+				</td>
+				<td>99.00</td>
+				<td class="pl10">1</td>
+				<td class="tar">88.00</td>
+			</tr>
+			<tr>
+				<td class="pl10">2</td>
+				<td width=10% class="checkMoreBox">灰太狼<span class="checkMore">查看更多</span></td>
+				<td width=12%>2016-07-13</td>
+				<td width=17%>3672672979</td>
+				<td class="cf" width=39%>
+					<img class="proImg fl" src="../img/shopIcon.png" alt="" />
+					<div class="fl productInfo">
+						<span class="name">海澜之家男款运动裤 </br>宽松潮裤子</span>
+						<div class="cf">
+							<span class="color fl">颜色：浅灰 </span>
+							<span class="size fl">尺码：S</span>
+							<span class="seven fl"></span>
+							<span class="gift fl"></span>
+							<span class="real fl"></span>
+						</div>
+					</div>
+				</td>
+				<td>149.00</td>
+				<td class="pl10">1</td>
+				<td class="tar">75.00</td>
+			</tr>
+			<tr>
+				<td class="pl10">3</td>
+				<td width=10% class="checkMoreBox">空心菜<span class="checkMore">查看更多</span></td>
+				<td width=12%>2016-07-23</td>
+				<td width=17%>3672672999</td>
+				<td class="cf" width=39%>
+					<img class="proImg fl" src="../img/shopIcon.png" alt="" />
+					<div class="fl productInfo">
+						<span class="name">海澜之家男款休闲裤 </br>修身柔软款</span>
+						<div class="cf">
+							<span class="color fl">颜色：黑色 </span>
+							<span class="size fl">尺码：XXL</span>
+							<span class="seven fl"></span>
+							<span class="gift fl"></span>
+							<span class="real fl"></span>
+						</div>
+					</div>
+				</td>
+				<td>99.00</td>
+				<td class="pl10">2</td>
+				<td class="tar">76.00</td>
+			</tr>
+
+		</table>
+		<div class="pagination" id="page1">
+			<span><</span>
+			<a href="javascript:;" class="current">
+				<span>1</span>
+			</a>
+			<a href="javascript:;">
+				<span>2</span>
+			</a>
+			<a href="javascript:;">
+				<span>3</span>
+			</a>
+			<span>></span>
+		</div>
+		<div class="popOut">
+			<h4 class="closeBtnBox">愤怒小鸟 <span class="fr closeBtn">关闭</span></h4>
+			<div class="mb16">
+				<span class="popOutTit">人物标签：</span>
+				<span class="popOutTag">美食好爱者</span>
+				<span class="popOutTag">运动狂人</span>
+				<span class="popOutTag">网购达人</span>
+
+			</div>
+			<div class="lh36">
+				<div class="fl main50Percent">
+					<span class="popOutTit">婚姻状态：</span>
+					<span>未知</span>	
+				</div>
+				<div class="fl main50Percent">
+					<span class="popOutTit">性别：</span>
+					<span>男</span>	
+				</div>
+			</div>
+			<div class="lh36">
+				<div class="fl main50Percent">
+					<span class="popOutTit">年龄阶段：</span>
+					<span>25-35岁</span>
+				</div>
+				<div class="fl main50Percent">
+					<span class="popOutTit">职业：</span>
+					<span>IT人士</span>
+				</div>
+			</div>
+			<div class="lh36">
+				<div class="fl main50Percent">
+					<span class="popOutTit">消费习惯：</span>
+					<span>户外运动</span>
+				</div>
+				<div class="fl main50Percent">
+					<span class="popOutTit">地域：</span>
+					<span>北京海淀</span>
+				</div>
+			</div>
+			<div class="lh36">
+				<span class="popOutTit">评价立场：</span>
+				<span class="remarkBox"><i class="remark"></i>好评</span>			
+			</div>
+			<div class="lh36 cf">
+				<span class="popOutTit fl">评价内容：</span>
+				<div class="fl w89Percent">
+					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aenean euismod bibendum laoreet. Proin gravida commondo. Proin sodales pulvina tempor.
+					</span>			
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="listContent">
+		<div class="dateList cf">
+			<form>
+				<label for="">
+					<input type="radio" name="time" class="radioBtn"/>最近一周
+					<span class="fl radiobg bgactive"></span>
+				</label>
+				<label for="">
+					<input type="radio" name="time" class="radioBtn"/>最近15天
+					<span class="fl radiobg"></span>
+				</label>	
+				<label for="">
+					<input type="radio" name="time" class="radioBtn"/>最近一月
+					<span class="fl radiobg"></span>
+				</label>
+			</form>
+		</div>
+		<table class="mainList">
+			<tr class="bb">
+				<td>序号</td>
+				<td width=13%>客户昵称</td>
+				<td width=22%>访问时间</td>
+				<td width=10%>停留时间</td>
+				<td width=19% style="margin-right:20px;">IP地址</td>
+				<td width=9%>所属区域</td>
+				<td class="tar pr25" width=22%>上次登录时间</td>
+			</tr>
+			<tr>
+				<td class="pl10">1</td>
+				<td class="visitorName">孤独的思考者</td>
+				<td>2016-07-20 12:23:01</td>
+				<td>15分15秒</td>
+				<td class="cf">202.106.10.250</td>
+				<td >北京海淀</td>
+				<td class="tar">2016-07-22 12:11:10</td>
+			</tr>
+			<tr>
+				<td class="pl10">1</td>
+				<td class="visitorName">多啦B梦</td>
+				<td>2016-07-24 00:00:01</td>
+				<td>25分25秒</td>
+				<td class="cf">202.106.11.252</td>
+				<td >辽宁丹东</td>
+				<td class="tar">2016-07-22 12:11:10</td>
+			</tr>
+			<tr>
+				<td class="pl10">1</td>
+				<td class="visitorName">美羊羊</td>
+				<td>2016-07-22 07:00:01</td>
+				<td>35分35秒</td>
+				<td class="cf">202.106.15.253</td>
+				<td >北京昌平</td>
+				<td class="tar">2016-07-22 12:11:10</td>
+			</tr>
+		</table>	
+		
+		<div class="pagination" id="page1">
+			<span><</span>
+			<a href="javascript:;" class="current">
+				<span>1</span>
+			</a>
+			<a href="javascript:;">
+				<span>2</span>
+			</a>
+			<a href="javascript:;">
+				<span>3</span>
+			</a>
+			<span>></span>
+		</div>
+		<div class="popOut">
+			<h4 class="closeBtnBox">多啦B梦 <span class="fr closeBtn">关闭</span></h4>
+			<div class="mb16">
+				<span class="popOutTit">人物标签：</span>
+				<span class="popOutTag">选择恐惧症</span>
+				<span class="popOutTag">游戏热爱者</span>
+				<span class="popOutTag">户外运动</span>
+			</div>
+			<div class="lh36">
+				<div class="fl main50Percent">
+					<span class="popOutTit">婚姻状态：</span>
+					<span>已婚</span>	
+				</div>
+				<div class="fl main50Percent">
+					<span class="popOutTit">性别：</span>
+					<span>女</span>	
+				</div>
+			</div>
+			<div class="lh36">
+				<div class="fl main50Percent">
+					<span class="popOutTit">年龄阶段：</span>
+					<span>25-35岁</span>
+				</div>
+				<div class="fl main50Percent">
+					<span class="popOutTit">职业：</span>
+					<span>IT人士</span>
+				</div>
+			</div>
+			<div class="lh36">
+				<div class="fl main50Percent">
+					<span class="popOutTit">消费习惯：</span>
+					<span>网上购物</span>
+				</div>
+				<div class="fl main50Percent">
+					<span class="popOutTit">地域：</span>
+					<span>北京海淀</span>
+				</div>
+			</div>
+			<div class="lh36">
+				<span class="popOutTit">评价立场：</span>
+				<span class="remarkBox"><i class="remark"></i>好评</span>			
+			</div>
+			<div class="lh36 cf">
+				<span class="popOutTit fl">评价内容：</span>
+				<div class="fl w89Percent">
+					<span>Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commondo. Proin sodales pulvina tempor.
+					</span>			
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+        </div>
+    </body>
+    <script src="../js/lib/jquery.min.js"></script>
+<script src="../js/lib/echarts.min.js"></script>
+<script type="text/javascript" src="../js/lib/d3.js"></script>
+<script type="text/javascript" src="../js/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/lib/bubble-cloud.js"></script>
+<script type="text/javascript" src="../js/lib/sliderUI.js"></script>
+<script src="../js/lib/tweenjs-0.6.2.min.js"></script>
+<script src="../js/index.js"></script>
+
+
+    <script type="text/javascript" src="../js/lib/vendor/three.min.js"></script>
+<script type="text/javascript" src="../js/lib/vendor/OrbitControls.min.js"></script>
+<script type="text/javascript" src="../js/lib/vendor/d3threeD.min.js"></script>
+<script type="text/javascript" src="../js/lib/vendor/threejs/tween.min.js"></script>
+<script type="text/javascript" src="../js/lib/vendor/jusfoun/GisMapTest.min.js"></script>
+<script type="text/javascript" src="../js/lib/vendor/jusfoun/tip.js"></script>
+<script type="text/javascript" src="../js/lib/resource/json/gis_china_zhejiang_jinhua_20160723.js"></script>
+<script>
+ 
+
+</script>
+    <!-- <script src="../js/common.js"></script> -->
+    <!-- <script src="../js/index.js"></script> -->
+
+</html>

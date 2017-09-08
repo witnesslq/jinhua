@@ -1,0 +1,43 @@
+div.three-tooltip {
+    font-size: 14px;
+    background-color: transparent;
+    padding: 0px;
+    border: 0px;
+    color: transparent;
+    z-index: 25000;
+}
+
+div.tip-hillClumn {
+    border: 0px;
+    padding: 0px;
+    color: #ffffff;
+    font-family: 微软雅黑;
+}
+
+table.table-tip-list {
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0px 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    -ms-user-select: none;
+    color: #ffffff;
+    width: 160px;
+    height: 120px;
+    text-align: center;
+    background-color: rgba(20, 12, 79, 0.92);
+    font-family: 微软雅黑;
+    font-size: 15px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid #70c09a;
+    padding: 0px;
+    line-height: 30px;
+}
+
+table.table-tip-list tr td span {
+    color: #2bfeb5;
+    font-size: 18px;
+}
